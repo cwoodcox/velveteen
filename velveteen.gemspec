@@ -8,9 +8,12 @@ Gem::Specification.new do |spec|
   spec.version       = Velveteen::VERSION
   spec.authors       = ["Corey Woodcox"]
   spec.email         = ["corey.woodcox@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Velveteen is a simple worker queue library for RabbitMQ.}
+  spec.summary       = %q{RabbitMQ is fantastic at managing queues, Velveteen
+                          is a basic publisher and consumer library to make
+                          worker processes and consuming messages in Rabbit
+                          queues as jobs really easy.}
+  spec.homepage      = "https://github.com/tanner-labs/velveteen"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,4 +23,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "minitest", "~>5.3"
 end
