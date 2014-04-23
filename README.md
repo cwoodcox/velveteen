@@ -1,4 +1,4 @@
-# Velveteen
+# Velveteen [![CircleCI](https://circleci.com/gh/tanner-labs/velveteen.png?circle-token=d0d8dfe7fdca1c740a6e65a9503f461267126bb7)](https://circleci.com/gh/tanner-labs/velveteen)
 
 TODO: Write a gem description
 
