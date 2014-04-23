@@ -6,8 +6,8 @@ require 'velveteen/version'
 Gem::Specification.new do |spec|
   spec.name          = "velveteen"
   spec.version       = Velveteen::VERSION
-  spec.authors       = ["Corey Woodcox"]
-  spec.email         = ["corey.woodcox@gmail.com"]
+  spec.authors       = ["Corey Woodcox", "Dane Thurber"]
+  spec.email         = ["corey.woodcox@gmail.com", "dane.thurber@gmail.com"]
   spec.description   = %q{Velveteen is a simple worker queue library for RabbitMQ.}
   spec.summary       = %q{RabbitMQ is fantastic at managing queues, Velveteen
                           is a basic publisher and consumer library to make
