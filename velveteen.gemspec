@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest", "~> 5.3"
   spec.add_development_dependency "rake"
 
+  spec.add_dependency "hashie", "~> 2.1"
   spec.add_dependency "bunny", "~> 1.1"
   spec.add_dependency "json", "~> 1.8"
 end
