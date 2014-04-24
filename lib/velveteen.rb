@@ -1,9 +1,10 @@
+require 'hashie'
+require 'json'
+
+require 'velveteen/configuration'
 require 'velveteen/queue'
 require 'velveteen/delayed_queue'
 require 'velveteen/worker'
-
-require 'hashie'
-require 'json'
 
 module Velveteen
   class << self

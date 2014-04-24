@@ -1,10 +1,10 @@
 module Velveteen
   class Queue
-    DEFAULT_OPTIONS = { durable: true }
+    DEFAULT_OPTIONS = Configuration.new(durable: true)
 
     def initialize name, options = {}
       @name = name
-      @options = DEFAULT_OPTIONS.merge options
+      @options = DEFAULT_OPTIONS.deep_merge options
     end
 
     def push job
