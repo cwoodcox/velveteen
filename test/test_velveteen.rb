@@ -15,7 +15,7 @@ class TestVelveteen < Minitest::Test
     Bunny.stub :new, bunny do
       bunny.expect :start, true
       Velveteen.connection
-      bunny.verify
+      assert bunny.verify
     end
   end
 end

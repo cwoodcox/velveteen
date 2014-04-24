@@ -9,6 +9,6 @@ class TestQueue < Minitest::Test
     queue.instance_variable_set :@queue, q
 
     queue.push({some: 'hash'})
-    q.verify
+    assert q.verify
   end
 end
