@@ -14,7 +14,8 @@ module Velveteen
 
     private
     def channel
-      @channel ||= connection.create_channel
+      return @channel if @channel && @channel.open?
+      @channel = connection.create_channel
     end
 
     def connection
