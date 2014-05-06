@@ -15,6 +15,10 @@ module Velveteen
       @config ||= Hashie::Mash.new defaults
     end
 
+    def configure &block
+      block.call config
+    end
+
     def connection
       if @connection.nil? || @connection.closed? # Only connect if we don't have a connection
         logger.warn "RabbitMQ connection lost, reconnecting..." if @connection && @connection.closed?
