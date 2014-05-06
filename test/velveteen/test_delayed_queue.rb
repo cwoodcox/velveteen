@@ -7,6 +7,7 @@ class TestDelayedQueue < Minitest::Test
 
   def test_queue_setup
     mock_channel = Minitest::Mock.new
+    mock_channel.expect :open?, true
     mock_channel.expect :queue, true do |name, options|
       assert_equal name, "delay.30000.milliseconds"
 
