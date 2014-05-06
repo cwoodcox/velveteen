@@ -1,5 +1,6 @@
 module Velveteen
   class Queue
+    attr_reader :name, :options
     DEFAULT_OPTIONS = Configuration.new(durable: true)
 
     def initialize name, options = {}
