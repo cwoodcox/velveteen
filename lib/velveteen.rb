@@ -27,6 +27,7 @@ module Velveteen
         @connection = Bunny.new ENV['CLOUDAMQP_URL'] || nil
         @connection.start
       end
+      @connection
     end
 
     def default_queue
